@@ -41,8 +41,7 @@ body {
   background-image: url(../src/assets/bg-texture.png);
 }
 
-/* =============   GENERAL STYLES ============= */
-
+/* ==========   GENERAL STYLES ========== */
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
@@ -114,4 +113,26 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM) ========== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--containder-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* ========== MEDIA QUERIES (SMALL) ========== */
+@media screen and (max-width: 768px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section {
+    margin-top: 2rem;
+  }
 }
